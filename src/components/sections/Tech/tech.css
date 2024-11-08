@@ -1,0 +1,33 @@
+.techRoot {
+    /* height: 100vh;j */
+}
+
+.techRoot .headerTxt {
+    font-size: 35px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.skillWrap {
+    margin-bottom: 30px;
+    border: 1px solid #383838;
+    padding: 30px 10px;
+    border-radius: 20px;
+    background-color: rgb(20, 20, 20);
+}
+
+.skillTitle {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.skillsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}

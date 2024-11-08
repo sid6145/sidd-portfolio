@@ -1,0 +1,37 @@
+.aboutRoot {
+    color: #fff;
+    height: 100vh;
+    padding-top: 40px;
+}
+
+.aboutRoot h4 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.aboutRoot p {
+    margin: auto;
+    text-align: center;
+    max-width: 800px;
+    margin-top: 10px;
+}
+
+.expertise {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.cardRoot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    padding: 40px;
+    margin-top: 30px;
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+    background-color: #545353;
+}

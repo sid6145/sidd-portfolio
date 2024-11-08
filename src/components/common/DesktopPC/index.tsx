@@ -35,7 +35,7 @@ const DesktopPCCanvas = () => {
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<>Loading</>}>
-        <OrbitControls autoRotateSpeed={6} enableZoom={false} autoRotate maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} />
+        <OrbitControls autoRotateSpeed={3} enableZoom={false} autoRotate maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} />
         <DesktopPC />
         <ambientLight intensity={0.5} />
 

@@ -9,13 +9,6 @@ import DesktopPCCanvas from '../../common/DesktopPC';
 const Hero = () => {
 
     useGSAP(() => {
-        gsap.to(".heroImg", {
-            y: -30,
-            duration: 2,        
-            repeat: -1,         
-            yoyo: true, 
-            ease: "power1.inOut"
-        })
 
         gsap.from(".heroTextContent h1", {
             opacity: 0,

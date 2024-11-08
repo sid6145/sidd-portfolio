@@ -47,17 +47,32 @@ const Navbar = () => {
         })
     },[])
 
+    const handleScroll = (id) => {
+        const section = document.getElementById(id);
+        if (section) {
+            const headerOffset = 70; // Adjust this based on your header height
+            const elementPosition = section.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+    
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth' // Enables smooth scrolling
+            });
+        }
+    };
+    
+
   return (
     <div className='navbarRoot'>
-        <h4 className='logo'>Siddhant</h4>
+            <h4 className='logo'>Siddhant</h4>
 
-          <div className='navLinksContainer'>
-              {linksArr.map((item) => (
-                  <h4 key={item.id} className='navlink'>
-                    {item.label}
-                  </h4>
-              ))}
-          </div>
+            <div className='navLinksContainer'>
+                {linksArr.map((item) => (
+                    <h4 onClick={() => handleScroll(item.id)} key={item.id} className='navlink'>
+                        {item.label}
+                    </h4>
+                ))}
+            </div>
     </div>
   )
 }

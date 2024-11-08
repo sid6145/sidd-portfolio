@@ -1,0 +1,11 @@
+.experienceRoot {
+    min-height: 100vh;
+    padding-bottom: 80px;
+}
+
+.experienceRoot .headerTxt {
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
